@@ -1,0 +1,24 @@
+﻿@page
+@* @model vendedor.Pages.loginInputModel *@
+@model loginModel
+@{
+  ViewData["Title"] = "Login";
+}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="https://rafaelballen.com/wp-content/uploads/2021/01/27121918Manuel-Marulanda-Velez-Tirofijo-Farc.jpg"
+        alt="tirofijo" class="img-thumbnail">
+    </div>
+    <div class="col">
+      <h1>Login</h1>
+      <form action="/login" method="post">
+        <input type="text" placeholder="Usuario" asp-for="Input.Username">.
+        <span asp-validation-for="Input.Username"></span>
+        <input type="password" placeholder="Contraseña">
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      <a href="/forgot-password">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+</div>

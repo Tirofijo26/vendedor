@@ -7,7 +7,7 @@ namespace vendedor.Pages
     public class loginModel : PageModel
     {
         [BindProperty]
-        public LoginInputModel Input { get; set; }
+        public LoginInputModel ?Input { get; set; }
 
         public void OnGet()
         {

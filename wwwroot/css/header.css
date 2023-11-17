@@ -10,7 +10,7 @@ font-family: 'Raleway', sans-serif; */
 }
 
 .nav-header {
-  margin: 0 20px 0 20px;
+  margin: 0 80px 0 80px;
   display: grid;
   grid-template-columns: auto auto;
 }

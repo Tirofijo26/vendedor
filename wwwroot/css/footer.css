@@ -7,6 +7,7 @@ footer {
 .parte1 {
   position: relative;
   margin: 0 20px 0 20px;
+  margin-bottom: 40px;
 }
 
 .texto {
@@ -42,4 +43,58 @@ footer {
   font-size: 2.6rem;
 }
 
+/** ------------------------------ */
 
+.parte2 {
+  background-color: black;
+  color: white;
+  padding: 30px 20px 30px 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.contenedor-superior {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.contenedor-superior .right {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.left h4 {
+  font-size: 3rem;
+  font-family: 'Philosopher', sans-serif;
+  margin-left: 30px;
+}
+
+.left p {
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+.right h6 {
+  font-size: 2.2rem;
+}
+.right p {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.redes {
+  padding-top: 20px;
+}
+.redes a {
+  margin-right: 50px;
+}
+
+.copy {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}

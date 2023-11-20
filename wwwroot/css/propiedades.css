@@ -2,38 +2,18 @@
 main{
   padding: 40px;
 }
-.categorias{
-  width: 256px;
-  height: 56px;
-}
-.edificios {
+
+.grilla1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
-  gap: 20px; /* Espacio entre elementos */
+  grid-template-columns: 1fr 1fr;
 }
 
-/* Estilos para cada div dentro de .edificios */
-.edificios > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.grilla2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
-/* Estilos para las imágenes dentro de cada div */
-.edificios > div img {
-  max-width: 100%; /* Asegurar que las imágenes se ajusten al contenedor */
-  height: auto; /* Evitar deformaciones */
-  margin-bottom: 10px; /* Espacio entre imagen y texto */
-}
-
-/* Opcional: Estilos para el texto dentro de cada div */
-.edificios > div a {
-  text-decoration: none;
-  color: #333; /* Color del texto */
-  font-weight: bold;
-}
-.casa{
-  width: 590px; 
-  height: 590px;
+.departamento {
+  grid-area: 1 / 1 / 1 / 3;
 }

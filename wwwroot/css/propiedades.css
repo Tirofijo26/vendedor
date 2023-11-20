@@ -1,4 +1,11 @@
 /* Establecer el contenedor principal como un grid */
+main{
+  padding: 40px;
+}
+.categorias{
+  width: 256px;
+  height: 56px;
+}
 .edificios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
@@ -25,4 +32,8 @@
   text-decoration: none;
   color: #333; /* Color del texto */
   font-weight: bold;
+}
+.casa{
+  width: 590px; 
+  height: 590px;
 }

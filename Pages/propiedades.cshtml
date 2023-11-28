@@ -1,9 +1,37 @@
 ﻿@page
-@model vendedor.Pages.propiedadesModel
+@model Vendedor.Pages.PropiedadesModel
+@using Vendedor.Models
+@using Vendedor.Services
 @{
 }
 <main>
-   <div class="propiedades">
-     <img src="~/img/propiedades.png" alt="">
-   </div> 
+  <div class="propiedades">
+    <img src="~/img/propiedades.png" alt="">
+  </div>
+  @foreach (var propiedad in Model.Propiedades)
+  {
+    if (propiedad.Id == 0)
+    {
+      <div id="chao">
+        @* <p>@pizza.Id</p> *@
+        @* <p>@pizza.Nombre</p> *@
+        @* <img src="@pizza.Imagen" alt="imagen pizza"> *@
+        @* <p>@pizza.Precio</p> *@
+        <form method="post" asp-page-handler="añadir" asp-route-id="@propiedad.Id">
+          @* <button>añadir</button> *@
+        </form>
+      </div>
+    }
+    else
+    {
+      <div class="caja">
+        <img src="@propiedad.Imagen" alt="imagen propiedad">
+        <p>$ @propiedad.Tipo</p>
+        <p> @propiedad.Imagen</p>
+        <form method="post" asp-page-handler="añadir" asp-route-id="@propiedad.Id">
+          <button class="btn btn-primary btn-añadir">añadir al carrito</button>
+        </form>
+      </div>
+    }
+  }
 </main>

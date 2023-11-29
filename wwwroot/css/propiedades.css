@@ -46,3 +46,7 @@ main div {
   grid-template-columns: 3fr 2fr;
 }
 
+.parte-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -9,6 +9,10 @@ main div a p {
   color: black;
 }
 
+main div {
+  padding-top: 30px;
+}
+
 .parte-1 {
   display: grid;
   grid-template-areas:
@@ -35,5 +39,10 @@ main div a p {
 .parte-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.parte-3 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
 }
 
